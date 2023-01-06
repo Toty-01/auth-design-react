@@ -39,7 +39,7 @@ export default function SignUpModal() {
       )
       formRef.current.reset();
       setValidation("")
-      // console.log(cred);
+      console.log(cred);
       toggleModals("close")
       navigate("/private/private-home")
 
@@ -77,7 +77,7 @@ export default function SignUpModal() {
               <div className="modal-dialog">
                 <div className="modal-content">
                   <div className="modal-header">
-                    <h5 className="modal-title">Sign Up</h5>
+                    <h5 className="modal-title">Inscription</h5>
                     <button 
                     onClick={closeModal}
                     className="btn-close"></button>
@@ -90,7 +90,7 @@ export default function SignUpModal() {
                     className="sign-up-form">
                       <div className="mb-3">
                         <label htmlFor="signUpEmail" className="form-label">
-                          Email adress
+                          Email
                         </label>
                         <input
                           ref={addInputs}
@@ -104,7 +104,7 @@ export default function SignUpModal() {
 
                       <div className="mb-3">
                         <label htmlFor="signUpPwd" className="form-label">
-                          Password
+                          Mot de passe
                         </label>
                         <input
                           ref={addInputs}
@@ -118,7 +118,7 @@ export default function SignUpModal() {
 
                       <div className="mb-3">
                         <label htmlFor="repeatPwd" className="form-label">
-                          Repeat Password
+                          Repeter Mot de passe
                         </label>
                         <input
                           ref={addInputs}
@@ -131,7 +131,7 @@ export default function SignUpModal() {
                         <p className="text-danger mt-1">{validation}</p>
                       </div>
 
-                      <button className="btn btn-primary">Submit</button>
+                      <button className="btn btn-primary">S'inscrire</button>
                     </form>
                   </div>
                 </div>
